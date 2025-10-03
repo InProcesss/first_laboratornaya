@@ -26,15 +26,16 @@ int main()
 	proizvedenie2 = b * a;
 	delenie1 = a / b;
 	delenie2 = b / a;
-	cout << "размер double" << razmer_double << endl;
-	cout << summa1 << " double" << endl;
-	cout << raznost1 << " double" << endl;
-	cout << proizvedenie1 << " double" << endl;
-	cout << summa2 << " double" << endl;
-	cout << raznost2 << " double" << endl;
-	cout << proizvedenie2 << " double" << endl;
-	cout << delenie1 << " double" << endl;
-	cout << delenie2 << " double" << endl;
+	std::cout << "размер double" << razmer_double << std::endl;
+	std::cout << summa1 << " double" << std::endl;
+	std::cout << raznost1 << " double" << std::endl;
+	std::cout << proizvedenie1 << " double" << std::endl;
+	std::cout << summa2 << " double" << std::endl;
+	std::cout << raznost2 << " double" << std::endl;
+	std::cout << proizvedenie2 << " double" << std::endl;
+	std::cout << delenie1 << " double" << std::endl;
+	std::cout << delenie2 << " double" << std::endl;
 	return 0;
 }
+
 
