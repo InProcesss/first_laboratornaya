@@ -6,6 +6,7 @@ using namespace std;
 int main()
 {
 	setlocale(LC_ALL, "russian");
+	//вводим числа
 	short A, bitValue;
 	int i;
 	std::cout << "Введите число A" << std::endl;
@@ -14,14 +15,16 @@ int main()
 	std::cout << "Введите число i(номер бита) от 0 до 7" << std::endl;
 	std::cin >> i;
 
+	//проверяем число i
 	if ((i < 0) || (7 < i)) {
 		std::cout << "Число i введено неверно, завершаю программу" << std::endl;
 		return 0;
 	}
-
+	
+	//получение значения i-го бита
 	bitValue = (A >> i) & 1;
 
-	//2 часть
+	//часть 2.1
 	int B1,B2;
 	string binary = "";
 	if (bitValue != 0) {
@@ -41,12 +44,13 @@ int main()
 		}
 	}
 	else {
+		//меняю число А через xor
 		short result = A ^ ((i+1) | (i-1));
 		std::cout << "число A с измененными i+1 и i+2 =" << result << std::endl;
 	}
 
 
-
+	//часть 2.2
 	int N;
 
 	std::cout << "Введите номер ошибки: " << std::endl;
